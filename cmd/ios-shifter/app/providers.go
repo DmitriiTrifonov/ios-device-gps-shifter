@@ -5,8 +5,7 @@ type LocationProvider interface {
 }
 
 type DeviceManager interface {
-	GetDevice() string
-	LoadImages(uuid string) error
+	Init() error
 	SetLocation(str string) error
 	ResetLocation() error
 }

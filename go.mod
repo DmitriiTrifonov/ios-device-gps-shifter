@@ -2,8 +2,9 @@ module ios-device-gps-shifter
 
 go 1.18
 
+require github.com/DmitriiTrifonov/gps-shifter v0.0.6
+
 require (
-	github.com/DmitriiTrifonov/gps-shifter v0.0.5
 	github.com/adrianmo/go-nmea v1.7.0 // indirect
 	github.com/creack/goselect v0.1.2 // indirect
 	go.bug.st/serial v1.3.5 // indirect

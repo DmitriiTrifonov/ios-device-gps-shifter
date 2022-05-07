@@ -15,8 +15,7 @@ func NewApplication(loc LocationProvider, manager DeviceManager) *Application {
 }
 
 func (a *Application) Start() {
-	deviceUUID := a.deviceManager.GetDevice()
-	err := a.deviceManager.LoadImages(deviceUUID)
+	err := a.deviceManager.Init()
 	if err != nil {
 		// TODO: Add retries and proper error handling
 		log.Fatal(err)
